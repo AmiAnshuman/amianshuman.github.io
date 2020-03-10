@@ -47,13 +47,15 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 40px 0px;
-    margin: 0px;
+    /*    padding: 40px 0px 0px;*/
+    height: 10%;
+    margin: 0px 0px 10px 0px;
     position: absolute;
     z-index: 999;
     list-style-type: none;
     width: 100%;
-
+    position: fixed;
+    background-color: rgb(0, 37, 46);
 }
 
 li {
@@ -77,16 +79,24 @@ li {
     border-radius: 15%;
 }
 
-li:active {
-    color: darkcyan;
+li > a {
+    color: aliceblue;
+    text-decoration: none;
 }
+
+
 
 li:hover {
 
     /*    text-decoration: overline;*/
+
     -webkit-transition: 0.1s;
     transition: 0.1s;
     border: 3px double white;
+}
+
+li > a:hover {
+    color: darkgray;
 }
 
 .my1 > .i2 {
@@ -194,7 +204,7 @@ li:hover {
 
 .about > h2 {
     width: 100%;
-    padding: 30px 0px 0px;
+    padding: 50px 0px 0px;
     margin: 0px;
     height: 100px;
     display: -webkit-box;
@@ -219,7 +229,7 @@ li:hover {
     height: 0.7px;
     width: 250px;
     margin-left: -185px;
-    bottom: 419px;
+    bottom: 400px;
     background-color: #0fb4ca;
     background: -webkit-gradient(linear, left top, right top, from(rgba(15, 180, 202, 0)), color-stop(40%, rgba(15, 180, 202, 1)), color-stop(50%, rgba(15, 180, 202, 1)), color-stop(60%, rgba(15, 180, 202, 1)), to(rgba(15, 180, 202, 0)));
     background: linear-gradient(to right, rgba(15, 180, 202, 0) 0%, rgba(15, 180, 202, 1) 40%, rgba(15, 180, 202, 1) 50%, rgba(15, 180, 202, 1) 60%, rgba(15, 180, 202, 0) 100%);
@@ -231,7 +241,7 @@ li:hover {
     height: 0.7px;
     width: 250px;
     margin-left: 185px;
-    bottom: 419px;
+    bottom: 400px;
     background-color: #0fb4ca;
     background: -webkit-gradient(linear, left top, right top, from(rgba(15, 180, 202, 0)), color-stop(40%, rgba(15, 180, 202, 1)), color-stop(50%, rgba(15, 180, 202, 1)), color-stop(60%, rgba(15, 180, 202, 1)), to(rgba(15, 180, 202, 0)));
     background: linear-gradient(to right, rgba(15, 180, 202, 0) 0%, rgba(15, 180, 202, 1) 40%, rgba(15, 180, 202, 1) 50%, rgba(15, 180, 202, 1) 60%, rgba(15, 180, 202, 0) 100%);
@@ -301,7 +311,7 @@ li:hover {
 
 .reach > h2 {
     width: 100%;
-    padding: 30px 0px 0px;
+    padding: 50px 0px 0px;
     margin: 0px;
     height: 100px;
     display: -webkit-box;
@@ -326,7 +336,7 @@ li:hover {
     height: 0.7px;
     width: 250px;
     margin-left: -185px;
-    bottom: 420px;
+    bottom: 400px;
     background-color: #0fb4ca;
     background: -webkit-gradient(linear, left top, right top, from(rgba(15, 180, 202, 0)), color-stop(40%, rgba(15, 180, 202, 1)), color-stop(50%, rgba(15, 180, 202, 1)), color-stop(60%, rgba(15, 180, 202, 1)), to(rgba(15, 180, 202, 0)));
     background: linear-gradient(to right, rgba(15, 180, 202, 0) 0%, rgba(15, 180, 202, 1) 40%, rgba(15, 180, 202, 1) 50%, rgba(15, 180, 202, 1) 60%, rgba(15, 180, 202, 0) 100%);
@@ -338,7 +348,7 @@ li:hover {
     height: 0.7px;
     width: 250px;
     margin-left: 185px;
-    bottom: 420px;
+    bottom: 400px;
     background-color: #0fb4ca;
     background: -webkit-gradient(linear, left top, right top, from(rgba(15, 180, 202, 0)), color-stop(40%, rgba(15, 180, 202, 1)), color-stop(50%, rgba(15, 180, 202, 1)), color-stop(60%, rgba(15, 180, 202, 1)), to(rgba(15, 180, 202, 0)));
     background: linear-gradient(to right, rgba(15, 180, 202, 0) 0%, rgba(15, 180, 202, 1) 40%, rgba(15, 180, 202, 1) 50%, rgba(15, 180, 202, 1) 60%, rgba(15, 180, 202, 0) 100%);
@@ -379,17 +389,16 @@ li:hover {
 }
 
 .rq1 > td > input {
-    padding: 5px;
     text-align: center;
     border: 1px solid rgba(1, 1, 1, 0.1);
     /*    margin: 10% ;*/
     /*    margin-right: 5%;*/
     border-radius: 5%;
     -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 0px;
     width: 90%;
-    height: 30px;
+    height: 100%;
     color: gray;
     background: white;
     -webkit-box-shadow: 100px red;
